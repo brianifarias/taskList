@@ -3,6 +3,9 @@
 ## Consigna
 A partir del código de este repositorio, crear una aplicación web (SPA) utlizando React que sirva para realizar un seguimiento de tareas pendientes (To-Do List).
 
+### Formato de entrega
+Se debe subir la solución a un repositorio de código a elección (puede ser GitHub, GitLab o Bitbucket entre otros) y enviar el link a dicho repositorio.
+
 ### Paquetes a utilizar
 Es obligatorio el uso de MUI como biblioteca de componentes. El archivo ```/package.json``` ya tiene una serie de paquetes incluídos para facilitar el desarrollo. Se pueden agregar nuevos paquetes en el caso de considerarse necesario.
 
