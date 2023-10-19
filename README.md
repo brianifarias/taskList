@@ -8,6 +8,7 @@ Es obligatorio el uso de MUI como biblioteca de componentes. El archivo ```/pack
 
 ### Historias de usuario
 Las siguientes historias de usuario definen los requerimientos de la aplicación:
+
 - Las tareas tienen título, descripción, categoría y estado. El estado puede ser "Pendiente" o "Terminada".
 - Como usuario quiero ver un listado de mis tareas pendientes y terminadas con el siguiente diseño: [diseño en Figma](https://www.figma.com/file/4Zwx6CXgKhV8yRGaIBnQK9/To-Do-List?type=design&node-id=0%3A1&mode=design&t=vOfS9v6wmkyCJvcF-1). Cada una de las tareas listadas muestra si está terminada o no, su título, descripción y categoría.
 - Como usuario puedo marcar una tarea pendiente como tarea terminada haciendo click en el checkbox de la tarea. Luego de marcada como terminada, la tarea se lista bajo la sección de tareas terminadas.
@@ -23,6 +24,7 @@ Las siguientes historias de usuario definen los requerimientos de la aplicación
 
 ### Persistencia de datos
 A fines de facilitar el desarrollo de la aplicación, se creó una API REST utilizando json-server a partir del archivo ```/db.json```. Algunos de los endpoints que se pueden utilizar:
+
 - ```GET localhost:3000/tasks```
 - ```GET localhost:3000/tasks/{id}```
 - ```PUT localhost:3000/tasks/{id}```
