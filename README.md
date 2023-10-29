@@ -1,4 +1,4 @@
-# Ejercicio técnico frontend - Minder
+# Ejercicio
 
 ## Consigna
 A partir del código de este repositorio, crear una aplicación web (SPA) utlizando React que sirva para realizar un seguimiento de tareas pendientes (To-Do List).
