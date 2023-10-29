@@ -7,8 +7,8 @@ import Modal from '../../components/Modal/Modal';
 
 const TaskList = () => {
   const [openFormModal, setOpenFormModal] = useState(false);
-  const { data: tasks, isLoading: isLoadingTasks, isError: isErrorTasks } = useGetTasksQuery();
-  const { data: categories, isLoading: isLoadingCategories, isError: isErrorCategories } = useGetCategoriesQuery();
+  const { data: tasks, isLoading: isLoadingTasks, isError: isErrorTasks } = useGetTasksQuery({});
+  const { data: categories } = useGetCategoriesQuery({});
   const [updateTask] = useUpdateTaskMutation();
 
   const handleClickOpenModal = () => {

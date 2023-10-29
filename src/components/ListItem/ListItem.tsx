@@ -1,5 +1,5 @@
 import ListItem from '@mui/material/ListItem';
-import { Checkbox, ListItemButton, ListItemIcon, ListItemText, Typography } from '@mui/material';
+import { Checkbox, ListItemButton, ListItemIcon, ListItemText } from '@mui/material';
 import { Category } from '../Modal/Modal';
 
 export interface Task {
@@ -9,19 +9,15 @@ export interface Task {
   category_id: string;
   completed: boolean;
   categories: Category[];
-  update: () => void;
+  update: (taskUpdate: Partial<Task>) => void;
 }
 
 const getColorById = (category_id: string, categories: Category[]) => {
-  const item = categories?.find((categorie: Category) => categorie.id === category_id);
+  const item = categories?.find((category: Category) => category.id === category_id);
   if (item) {
     return item.color;
   }
   return 'white';
-};
-
-const handleCheck = (event: React.ChangeEvent<HTMLInputElement>) => {
-  console.log(event?.target.checked);
 };
 
 const ListItemModified = ({ title, description, completed, category_id, id, categories, update }: Task) => {

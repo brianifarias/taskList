@@ -32,7 +32,7 @@ const Modal = ({ open, handleClose, categories }: ModalProps) => {
     setCategorieSelected(event.target.value as string);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     setTitleError(false);
     setCategorieError(false);
